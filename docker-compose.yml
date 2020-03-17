@@ -1,0 +1,11 @@
+version: "2"
+services:
+  app:
+    build: ./app
+    volumes:
+      - ./app/data/AOB:/etc/AOB
+      - ./app/data/media:/media
+      - ./app/log:/var/log/apache2
+    ports:
+      - 8888:80
+    restart: always
