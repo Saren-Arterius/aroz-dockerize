@@ -3,9 +3,9 @@ services:
   app:
     build: ./app
     volumes:
-      - ./app/data/AOB:/etc/AOB
-      - ./app/data/media:/media
-      - ./app/log:/var/log/apache2
+      - ./app/data/files:/arozos/src/files
+      - ./app/data/tmp:/arozos/src/tmp
+      - ./app/data/system:/arozos/src/system
     ports:
       - 8888:80
     restart: always
