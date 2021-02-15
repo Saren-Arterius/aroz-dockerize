@@ -7,6 +7,6 @@ services:
       - ./app/data/tmp:/arozos/src/tmp
       - ./app/data/system:/arozos/src/system
     ports:
-      - 8888:80
-      - 2121:21
+      - "8888:80"
+      - "2121:21"
     restart: always
