@@ -33,4 +33,6 @@ jobs:
           push: true
           tags: user/app:latest
           file: ./app/Dockerfile
+          image: aroz
+          
           
