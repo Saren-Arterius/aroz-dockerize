@@ -32,5 +32,5 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          file: Dockerfile
+          file: dockerfile
           tags: user/app:latest
