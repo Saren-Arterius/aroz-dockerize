@@ -6,4 +6,4 @@ WORKDIR /arozos/src
 RUN git checkout v1.116
 RUN go build
 RUN apk add util-linux ffmpeg
-CMD /arozos/src/arozos -port 80
+#CMD /arozos/src/arozos -port 80
