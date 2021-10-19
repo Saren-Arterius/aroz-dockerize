@@ -1,7 +1,8 @@
-version: "2"
+version: "2.4"
 services:
-  app:
-    build: ./buildlocal
+  x64:
+    platform: linux/amd64
+    build: ./buildlocal/amd64
     volumes:
       - ./app/data/files:/arozos/src/files
       - ./app/data/tmp:/arozos/src/tmp
@@ -9,4 +10,15 @@ services:
     ports:
       - "8888:80"
       - "2121:21"
+    restart: always
+  arm64:
+    platform: linux/arm64
+    build: ./buildlocal/arm64
+    volumes:
+      - ./app/data/files:/arozos/src/files
+      -./app/data/tmp:/arozos/src/tmp
+      -./app/data/system:/system
+    ports:
+      - "8888:80"
+      -"2121:21"
     restart: always
