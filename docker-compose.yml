@@ -16,9 +16,9 @@ services:
     build: ./buildlocal/arm64
     volumes:
       - ./app/data/files:/arozos/src/files
-      -./app/data/tmp:/arozos/src/tmp
-      -./app/data/system:/system
+      - ./app/data/tmp:/arozos/src/tmp
+      - ./app/data/system:/system
     ports:
       - "8888:80"
-      -"2121:21"
+      - "2121:21"
     restart: always
