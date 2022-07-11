@@ -6,7 +6,7 @@ services:
     volumes:
       - ./app/data/files:/arozos/src/files
       - ./app/data/tmp:/arozos/src/tmp
-      - ./app/data/system:/system
+      - ./app/data/system:/arozos/src/system
     ports:
       - "8888:80"
       - "2121:21"
@@ -17,7 +17,7 @@ services:
     volumes:
       - ./app/data/files:/arozos/src/files
       - ./app/data/tmp:/arozos/src/tmp
-      - ./app/data/system:/system
+      - ./app/data/system:/arozos/src/system
     ports:
       - "8888:80"
       - "2121:21"
