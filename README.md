@@ -1,5 +1,5 @@
 # aroz-dockerize
-Docker support for https://github.com/tobychui/arozos v1.116
+Docker support for https://github.com/tobychui/arozos v1.123
 
 # Usage
 1. Ensure docker && docker-compose installed
